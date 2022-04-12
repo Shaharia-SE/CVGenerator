@@ -14,13 +14,21 @@
 <br/>
 <p>Summary</p>
 <p>{{ user_profile.summary }}</p>
+<hr/>
+
 <p>Skill</p>
 <p>{{ user_profile.skill }}</p>
+<hr/>
+
 <p>Education</p>
 <ul>
-    <li>{{ user_profile.school }}</li>
-    <li>{{ user_profile.university }}</li>
+    <li>Schooling:{{ user_profile.school }}</li>
+    <li>{{ user_profile.degree }} from {{ user_profile.university }}</li>
 </ul>
+<hr/>
 
+<p>Previous work</p>
+<p>{{ user_profile.previous_work }}</p>
+<hr/>
 </body>
 </html>
