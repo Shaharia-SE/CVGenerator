@@ -19,7 +19,8 @@ def accept(request):
         previous_work = request.POST.get("previous_work", "")
         skill = request.POST.get("skill", "")
 
-        profile = Profile(name=name, email=email, phone=phone, summary=summary, degree=degree, school=school,
+        profile = Profile(image=image, name=name, email=email, phone=phone, summary=summary, degree=degree,
+                          school=school,
                           university=university, previous_work=previous_work, skill=
                           skill)
         profile.save()
